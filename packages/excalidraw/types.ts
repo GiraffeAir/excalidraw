@@ -972,6 +972,11 @@ export type ExportOpts = {
 };
 
 export type ImageOptions = Partial<{
+  /**
+   * Maximum width or height of the image in pixels.
+   * Images larger than this will be scaled down.
+   * Pass `Infinity` to disable image dimension scaling.
+   */
   maxWidthOrHeight: number;
   maxFileSizeBytes: number;
 }>;
